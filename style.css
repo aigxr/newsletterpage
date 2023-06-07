@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Bold';
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-mobile {
+    width: 100%;
+}
+
+.image-desktop {
+    display: none;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 1.5rem;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.box {
+    display: flex;
+    align-items: start;
+    gap: 15px;
+}
+
+.email-input-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.email-input-container p {
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.email-input {
+    padding: 1.5rem;
+    height: 60px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 7px;
+}
+
+.email-input::placeholder {
+    font-size: 16px;
+    color: hsl(231, 7%, 60%);
+}
+
+.sub-button {
+    height: 60px;
+    border-radius: 7px;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.sub-button:active {
+    background-color: hsl(4, 100%, 67%);
+}
+
+.success-container {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8rem 1.5rem 6rem 1.5rem;
+    height: 900px;
+}
+
+.success-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icon {
+    width: 60px;
+}
+
+.success-h1 {
+    font-weight: 900;
+    color: hsl(234, 29%, 20%);
+}
+
+.success-desc {
+    display: inline;
+    font-weight: 500;
+    align-items: center;
+}
+
+.dismiss-button {
+    height: 60px;
+    border-radius: 7px;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+}
+
+.red-bord {
+    border: 1px solid red;
+    background-color: hsla(4, 100%, 52%, 0.336);
+}
+
+#alert {
+    color: red;
+}
+
+.flex-info {
+    line-height: 25px;
+}
+
+#email-successed {
+    display: inline-block;
+    align-items: end;
+    font-weight: 600;
+    line-height: 1;
+}
+
+@media (min-width: 750px) {
+    body {
+        background-color: hsl(235, 18%, 26%);
+    }
+    .image-mobile {
+        display: none;
+    }
+
+    .image-desktop {
+        display: flex;
+        padding: 1rem;
+    }
+
+    .box {
+        display: flex;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 50px;
+        font-weight: 800;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 630px;
+    }
+
+    .text-container {
+        width: 600px;
+        height: 650px;
+        padding: 4.5rem;
+    }
+
+    .sub-button:hover {
+        background-color: hsl(4, 100%, 67%);
+    }
+
+    .sub-button:active {
+        background-color: hsl(4, 100%, 80%);
+    }
+
+    .success-container {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3rem;
+        width: 470px;
+        height: 500px;
+        border-radius: 30px;
+        background-color: hsl(0, 0%, 100%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 4px 20px 1px hsl(234, 29%, 20%);
+    }
+    
+    .success-box {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .text-box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .icon {
+        width: 60px;
+    }
+    
+    .success-h1 {
+        font-weight: 900;
+        color: hsl(234, 29%, 20%);
+    }
+    
+    .success-desc {
+        font-weight: 500;
+        line-height: 25px;
+    }
+    
+    .dismiss-button {
+        height: 60px;
+        border-radius: 7px;
+        background-color: hsl(234, 29%, 20%);
+        color: hsl(0, 0%, 100%);
+        font-size: 17px;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dismiss-button:hover {
+        background-color: hsl(4, 100%, 67%);
+    }
+
+    .dismiss-button:active {
+        background-color: hsl(4, 100%, 80%);
+    }
+}
